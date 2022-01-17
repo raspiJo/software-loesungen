@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>                                                                  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Software-Lösungen
+    </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,200&display=swap" rel="stylesheet">
+
+
+    <style>
+
+        .moon-dance {
+            font-family: 'Moon Dance', cursive;
+            text-align: center;
+            color: crimson;
+        }
+
+        .betriebssysteme {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .image-style {
+            height: 100px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .bilderrahmen {
+            display: flex;
+            justify-content: center;
+        }
+
+        .hintergrund {
+            background-color: #DEDEDE;
+        }
+
+        .anwendung {
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        .winterdienst-bild {
+            height: 300px;
+            width: 100px;
+        }
+
+        .ueberschrift {
+            font-family: 'Roboto Mono', monospace;
+            font-size: 70px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .kopf {
+            background-color: darkgrey;
+            border-radius: 30px;
+            margin: 30px;
+        }
+
+        .download-btn {
+            display: block;
+            background: crimson;
+            padding: 15px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+            width: 100px;
+            text-align: center;
+            color: #000000;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+
+        .download {
+            display: flex;
+            justify-content: first baseline;
+        }
+
+        body {
+            padding-left: 10px;
+            padding-right: 10px;
+            display: flex;
+            justify-content: center;
+            margin: 0y;
+        }
+
+        
+
+#slider {
+	overflow: hidden;
+	height: 500px;
+	width: 250px;
+    margin: 10px;
+}
+#slider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 15s slider infinite;
+}
+#slider figure img {
+	width: 20%;
+	float: left;
+}
+
+@keyframes slider {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: 0;
+	}
+	25% {
+		left: -100%;
+	}
+	45% {
+		left: -100%;
+	}
+	50% {
+		left: -200%;
+	}
+	70% {
+		left: -200%;
+	}
+	75% {
+		left: -300%;
+	}
+	95% {
+		left: -300%;
+	}
+	100% {
+		left: -400%;
+	}
+}
+
+
+    </style>
+</head>
+<body>
+
+    <div class="hintergrund">
+
+        <div class="kopf">
+            <p class="ueberschrift">Software-Lösungen</p>
+            <h1 class="moon-dance">... wenns um Software geht ...</h1>
+    
+            <div class="bilderrahmen">
+                <img src="windows11.png" class="image-style">
+                <img src="android.png" class="image-style">
+                <img src="linux.png" class="image-style">
+            </div>
+        </div>
+
+        <br><br><br>
+
+        <div class="anwendung" >
+
+            <div id="slider">
+                <figure>
+                    <img src="Winterdienst/1.jpg">
+                    <img src="Winterdienst/2.jpg">
+                    <img src="Winterdienst/3.jpg">
+                    <img src="Winterdienst/4.jpg">
+                    <img src="Winterdienst/5.jpg">
+                </figure>
+            </div>
+
+            <div>
+                <h1>Winterdienst</h1>
+                <p>Mit dieser App behälst du dem Überblick über deine Winterdienste!</p>
+
+                <div class="donwload">
+                    <p>Download:</p>
+                    <a href="Winterdienst/Winterdienst.apk" download class="download-btn">Android</a>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+
+</body>
+</html>
